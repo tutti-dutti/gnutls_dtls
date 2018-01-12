@@ -10,6 +10,7 @@ DtlsPskConnection::DtlsPskConnection(){
 }
 
 DtlsPskConnection::~DtlsPskConnection(){
+    cleanup();
 }
 
 void DtlsPskConnection::cleanup(){

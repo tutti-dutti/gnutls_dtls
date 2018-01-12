@@ -10,7 +10,8 @@ OBJECTS         := $(patsubst %.$(SRC_EXT),%.o,$(SOURCES))
 
 HOME=$(shell echo ~)
 INCLUDES=-I/usr/include/
-LDLIBS=-L$(BUILDROOT)/output/target/usr/lib -lpthread -lgnutls
+#LDLIBS=-L$(BUILDROOT)/output/target/usr/lib -lpthread -lgnutls
+LDLIBS= -lpthread -lgnutls
 
 EXECUTABLE=dtls
  
